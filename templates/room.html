@@ -1,0 +1,6 @@
+{% if 'available-rooms' in room and room['available-rooms'] > 0 %}
+    <div style="margin-bottom: 16px;">
+        <h4 style="color: rgb(120,120,120);margin-bottom: 4px;">{{room['title']}}</h4>
+        <div><b>Price:</b> {{room['price']}}</div>
+    </div>
+{% endif %}

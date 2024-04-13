@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>{{company}} Hotel</title>
+        <style>
+            /* using a tag */
+            h1 {
+                font-size: 70px;
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                font-weight: normal;
+                color: grey;
+                text-align: center;
+            }
+
+            h2 {
+                font-size: 50px;
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                font-weight: normal;
+                color: rgb(80,80,80);
+                text-align: center;
+            }
+
+            /* using a class */
+            .bodytext {
+                font-size: 20px;
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                font-weight: normal;
+                color: black;
+                text-align: center;
+            }
+
+
+            /* using an ID */
+            #container {
+                max-width: 1000px;
+                /* check out 'css box model' for setting margins */
+                
+                /* margin-left: 80px; */
+                margin: 0 auto 0 auto;
+
+            }
+
+            #heritance_home {
+                width: 100%;
+                height: 720px;
+                object-fit: cover;
+            }
+        </style>
+    </head>
+    <body>
+        <!-- apply div to a larger context -->
+        <div id="container">
+            <h1>{{company}} Hotel</h1>
+            <img src="https://www.heritancehotels.com/ahungalla/wp-content/uploads/sites/20/2019/09/heritance-hotels-ahungalla-5-1.jpg" id="heritance_home">
+            <!-- <img src="https://www.heritancehotels.com/ahungalla/wp-content/uploads/sites/20/2019/09/heritance-hotels-ahungalla-5-1.jpg" width="480" height="360" id="heritance_home">         -->
+
+            <h2>About Bookings</h2>
+            <p class="bodytext">This is about the bookings.
+
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin feugiat tellus non nulla posuere, at interdum risus lacinia. Nam vulputate lorem ex, quis condimentum velit scelerisque non. Curabitur ullamcorper aliquet nulla, at egestas augue pretium eget. In viverra fringilla posuere. Vestibulum varius aliquam ligula sit amet dapibus. Duis sed metus ultrices, sodales tellus et, tincidunt sapien. Nunc quis felis mattis, placerat augue at, facilisis nunc.
+            </p>
+
+            <div style="text-align: center;">
+                <button>Book Your Stay</button>
+            </div>
+
+            <h2>Room Types</h2>
+            <p class="bodytext">TODO : include the room types
+                Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.                
+            </p>
+            <!-- apply div to a smaller context       -->
+            <div style="text-align: center;">
+                <button>Contact Us</button>
+                <p>Copyright 2024, {{company}}</p>
+            </div>
+            
+        </div>
+    </body>
+</html>
